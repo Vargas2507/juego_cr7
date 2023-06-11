@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tragamonedas </title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div id="contenedor-juego">
+    <h1>Tragamonedas </h1>
+    <div id="contenedor-carretes">
+      <div class="carrete" id="carrete-1">
+        <img src="cr7.jpeg" height="200px" width="200px" alt="CR7">
+      </div>
+      <div class="carrete" id="carrete-2">
+        <img src="neymar.jpeg"height="200px" width="200px" alt="Neymar">
+      </div>
+      <div class="carrete" id="carrete-3">
+        <img src="messi.jpg" height="200px" width="200px" alt="Messi">
+      </div>
+    </div>
+    <div id="contenedor-tabla-pagos">
+      <h2>Premios</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Jugador</th>
+            <th>Premio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>3 veces Cristiano</td>
+            <td>500 monedas</td>
+          </tr>
+          <tr>
+            <td>3 Neymar</td>
+            <td>300 monedas</td>
+          </tr>
+          <tr>
+            <td>3 Messi</td>
+            <td>200 monedas</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="contenedor-controles">
+      <p id="balance">Cantidad: <span id="valor-balance">0</span> monedas</p>
+      <button id="boton-recargar">Recargar saldo</button>
+      <input type="number" id="entrada-apuesta" placeholder="Ingresa tu apuesta">
+      <button id="boton-aceptar">Aceptar</button>
+      <button id="boton-girar" disabled>Girar</button>
+    </div>
+    <div id="contenedor-mensaje"></div>
+    <input type="hidden" id="entrada-resultado" />
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
